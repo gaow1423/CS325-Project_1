@@ -36,4 +36,4 @@ int main () {
    cout << "The max array is " << max << "!\n";
    
    return 0;
-}
+} 
