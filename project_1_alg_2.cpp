@@ -17,7 +17,7 @@ int main () {
 
 	int n = 10;
 	int array [10] = {31,-41,59,26,-53,58,97,-93,-23,84};
-	int sum, l;
+	int sum, l, beginning_index, end_index;
 	int max = 0;
 
 
@@ -28,13 +28,23 @@ int main () {
 		    for (int k = l; k<j; k++){
 				sum = sum + array [k];
 			}
-	    	if (sum > max)
+	    	if (sum > max){
 	    		max = sum;
+				beginning_index = i;
+				end_index = j;
+			}
 			l++;
 	    }
 	}
    
-   cout << "The max array is " << max << "!\n";
+   cout << "The max array value is " << max << "!\n";
+   cout << "The max array is { ";
+   for(int a = beginning_index;a<=end_index; a++){
+	  cout << array[a];
+   	  cout << " ";
+	}
+   cout << "}\n";
+
    
-   return 0; 
+   return 0;
 }

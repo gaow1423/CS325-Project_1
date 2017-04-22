@@ -27,7 +27,7 @@ int main () {
 		    for (int k = i; k<j; k++){
 				sum = sum + array [k];
 			}
-			cout << sum << "\n";
+			//cout << sum << "\n";
 	    	if (sum > max){
 	    		max = sum;
 				beginning_index = i;
